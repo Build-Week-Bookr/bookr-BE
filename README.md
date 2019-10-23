@@ -7,7 +7,7 @@ This is a Build week backend project for Bookr app.
 Heroku URL:
 https://bookr-eu.herokuapp.com/
 
-User API:
+### User API:
 
 1. Add a user (POST /api/auth/register)
 2. Login a user (POST /api/auth/login)
@@ -16,7 +16,7 @@ User API:
 5. Update a user by id (PUT /api/users/:id)
 6. Delete a user by id (DELETE /api/users/:id)
 
-Book API:
+### Book API:
 
 1. Add a book (POST /api/books/)
 2. Get all books (GET /api/books/)
@@ -24,7 +24,7 @@ Book API:
 4. Delete a book by id (DELETE /api/book/:id)
 5. Update a book by id (PUT /api/book/:id)
 
-Review API:
+### Review API:
 
 1. Add a review (for a book) (POST /api/reviews/  where  book_id  is in the post body)
 2. Get all reviews (for a book) (GET /api/reviews/book/:book_id)
@@ -33,7 +33,7 @@ Review API:
 5. Update a review by id review id should be globally unique) (PUT /api/review/:id)
 
 
-User Shape:
+#### User Shape:
 ```json
 {
    "username": "John",
@@ -41,11 +41,11 @@ User Shape:
 }
 ```
 
-Book Shape:
+#### Book Shape:
 ```json
 {
    "title": "Title of The Book",
-	"author": "Author",
+   "author": "Author",
    "publisher": "Publisher",
    "synopsis": "Synopsis of the book... (256 chars)",
    "cover_image": "URL of image",
@@ -54,7 +54,7 @@ Book Shape:
 }
 ```
 
-Review Shape:
+#### Review Shape:
 ```json
 {
    "book_id": "ID of the book - 1 etc.",
